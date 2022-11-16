@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: #F0F2F5;
+}
+/*Derecho*/
+.derecho{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.Tarjeta-Iniciar-sesion{
+    width: 58%;
+    background-color: #fff;
+    height: 50vh;
+    border-radius: 10px;
+    margin: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 53px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 53px -26px rgba(0,0,0,0.75);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.input{
+    width: 100%;
+    height: 7vh;
+    border: 1px solid #dddfe2;
+    color : #1d2129;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 1em;
+}
+.Boton-Iniciar-seccion{
+    width: 100%;
+    height: 7vh;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #fff;
+}
+.Leyenda-Recuperar-Contraseña{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+.division{
+    background-color: #dddfe2;
+    width: 100%;
+    height: 1px;
+}
+.Boton-Crear-Cuenta{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: #fff;
+    font-weight: bold;
+}
+.Leyenda-Crear-Pagina{
+    cursor: pointer;
+}
+.Leyenda-Crear-Pagina:hover{
+    text-decoration: underline;
+}
+/*Inquierdo*/
+.izquierdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 9% 0% 9% 9%;
+}
+.logo-Facebook{
+    width: 50%;
+}
+.Leyenda-facebook{
+    font-size: 28px;
+    margin: 1.5vw;
+}
+
+@media (max-width: 600px) {
+    .Leyenda-facebook{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: #F0F2F5;
+    }
+    .derecho{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .Tarjeta-Iniciar-sesion{
+        width: 100%;
+        box-shadow: none;
+        border-radius: none;
+        margin: none;
+    }
+    .Boton-Iniciar-seccion{
+        font-size: 17px;
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        z-index: 0;
+        text-shadow: 0 -1px rgb(0 0 0 / 25%);
+        color: #fff;
+        text-align: center;
+        vertical-align: top;
+        white-space: nowrap;
+        padding: 0 16px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Boton-Crear-Cuenta{
+        font-size: 14px;
+        text-shadow: 0 -1px rgb(0 0 0 / 25%);
+        height: 36px;
+        padding: 3px 8px 2px;
+        border: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00a400;
+    }
+    .derecho p{
+        display: none;
+    }
+    /*Ixquierdo*/
+    .izquierdo{
+        width: 100vw;
+        padding: 0px;
+        margin: 0;
+        align-items: center;
+    }
+}
